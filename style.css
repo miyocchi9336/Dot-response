@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+}
+
+aside {
+  display: none;
+}
+
+.image {
+  background: pink;
+  height: 100px;
+}
+
+.text {
+  background: silver;
+  height: 100px;
+}
+
+@media (min-width: 600px) {
+  section {
+    display: flex;
+
+  }
+  .image {
+    width: 200px;
+  }
+  
+  .text {
+    flex: 1;
+  }
+}
+
+@media (min-width: 700px) {
+  section {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 200px;
+  }
+
+  .text {
+    width: 200px;
+    flex: none;
+  }
+}
+
+@media (min-width: 800px) {
+  section {
+    width: 800px;
+    flex-direction: row;
+  }
+
+  aside {
+    display: block;
+    background: plum;
+    width: 160px;
+  }
+
+  .text {
+    flex: 1;
+  }
+}
